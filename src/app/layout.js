@@ -1,8 +1,10 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { PointsProvider } from "@/context/PointsContext";
+
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
