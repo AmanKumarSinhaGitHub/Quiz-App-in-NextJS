@@ -18,10 +18,5 @@ export const PointsProvider = ({ children }) => {
 // Hook to use the context
 export const usePoints = () => {
   const context = useContext(PointsContext);
-  
-  if (!context) {
-    throw new Error('usePoints must be used within a PointsProvider');
-  }
-
   return context;
 };
