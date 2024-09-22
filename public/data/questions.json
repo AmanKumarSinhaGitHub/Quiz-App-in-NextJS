@@ -2,6 +2,7 @@
     "subjects": [
         {
             "name": "Coding",
+            "image": "/images/quiz.png",
             "questions": [
                 {
                     "question": "What does HTML stand for?",
@@ -107,6 +108,7 @@
         },
         {
             "name": "Math",
+            "image": "/images/quiz.png",
             "questions": [
                 {
                     "question": "What is the square root of 49?",
@@ -212,6 +214,7 @@
         },
         {
             "name": "Science",
+            "image": "/images/quiz.png",
             "questions": [
                 {
                     "question": "What is the chemical symbol for water?",
@@ -317,6 +320,7 @@
         },
         {
             "name": "History",
+            "image": "/images/quiz.png",
             "questions": [
                 {
                     "question": "Who was the first President of the USA?",
@@ -422,6 +426,7 @@
         },
         {
             "name": "Geography",
+            "image": "/images/quiz.png",
             "questions": [
                 {
                     "question": "What is the largest continent?",
@@ -527,6 +532,7 @@
         },
         {
             "name": "Literature",
+            "image": "/images/quiz.png",
             "questions": [
                 {
                     "question": "Who wrote 'Romeo and Juliet'?",
@@ -632,6 +638,7 @@
         },
         {
             "name": "Art",
+            "image": "/images/quiz.png",
             "questions": [
                 {
                     "question": "Who painted the Mona Lisa?",
@@ -737,6 +744,7 @@
         },
         {
             "name": "Music",
+            "image": "/images/quiz.png",
             "questions": [
                 {
                     "question": "Who composed the Four Seasons?",
@@ -842,6 +850,7 @@
         },
         {
             "name": "Sports",
+            "image": "/images/quiz.png",
             "questions": [
                 {
                     "question": "Which sport is known as 'the beautiful game'?",

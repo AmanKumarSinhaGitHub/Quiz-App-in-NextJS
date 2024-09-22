@@ -1,6 +1,16 @@
 const Footer = () => (
   <footer className="bg-gray-800 text-white p-4 text-center">
-    <p>&copy; 2024 Quiz App. All rights reserved.</p>
+    <p>
+      &copy; 2024{' '}
+      <a
+        href="https://aman-kumar-sinha.vercel.app/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-blue-400 hover:underline"
+      >
+        Aman Kumar Sinha
+      </a>. All rights reserved.
+    </p>
   </footer>
 );
 

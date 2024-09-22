@@ -18,12 +18,9 @@ const Quiz = ({ params }) => {
   useEffect(() => {
     const fetchQuestions = async () => {
       const response = await fetch('/data/questions.json');
-      console.log('Response:', response); // Log the response
       if (response.ok) {
         const data = await response.json();
-        console.log('Data:', data); // Log the data
         const subjectData = data.subjects.find(s => s.name.toLowerCase() === subject);
-        console.log('Subject Data:', subjectData); // Log the subject data
         setQuestions(subjectData ? subjectData.questions : []);
       } else {
         console.error('Failed to fetch questions');
@@ -31,7 +28,6 @@ const Quiz = ({ params }) => {
     };
     fetchQuestions();
   }, [subject]);
-  
 
   // Handle answer selection
   const handleAnswer = (option) => {
@@ -58,33 +54,33 @@ const Quiz = ({ params }) => {
   };
 
   return (
-    <div className="p-4">
+    <div className="p-6 bg-gray-100 min-h-screen">
       {!showResults ? (
-        <>
-          <h2 className="text-2xl">{questions[currentQuestionIndex]?.question}</h2>
+        <div className="max-w-xl mx-auto bg-white rounded-lg shadow-lg p-6">
+          <h2 className="text-2xl font-semibold text-center mb-4">{questions[currentQuestionIndex]?.question}</h2>
           <QuestionTimer onTimeUp={() => setIsAnswered(true)} />
-          <div className="mt-4">
+          <div className="mt-4 space-y-4">
             {questions[currentQuestionIndex]?.options.map((option) => (
               <button
                 key={option}
                 onClick={() => handleAnswer(option)}
-                className={`p-2 m-2 rounded ${
+                className={`w-full p-4 rounded-lg text-lg font-semibold transition duration-300 ${
                   isAnswered && option === questions[currentQuestionIndex].answer
-                    ? "bg-green-500"
+                    ? "bg-green-500 text-white"
                     : isAnswered && option === selectedOption
-                    ? "bg-red-500"
-                    : "bg-gray-200"
+                    ? "bg-red-500 text-white"
+                    : "bg-gray-200 hover:bg-gray-300"
                 }`}
               >
                 {option}
               </button>
             ))}
           </div>
-        </>
+        </div>
       ) : (
-        <div>
-          <h2 className="text-xl">Quiz Finished!</h2>
-          <p>Your Score: {points}</p>
+        <div className="max-w-xl mx-auto bg-white rounded-lg shadow-lg p-6 text-center">
+          <h2 className="text-2xl font-semibold mb-4">Quiz Finished!</h2>
+          <p className="text-lg">Your Score: {points}</p>
         </div>
       )}
     </div>
