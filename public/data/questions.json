@@ -1,0 +1,949 @@
+{
+    "subjects": [
+        {
+            "name": "Coding",
+            "questions": [
+                {
+                    "question": "What does HTML stand for?",
+                    "options": [
+                        "Hypertext Markup Language",
+                        "Hightext Machine Language",
+                        "Hyperlink and Text Markup Language",
+                        "Hypertext Markup Link"
+                    ],
+                    "answer": "Hypertext Markup Language"
+                },
+                {
+                    "question": "Which language is primarily used for web development?",
+                    "options": [
+                        "Python",
+                        "Java",
+                        "JavaScript",
+                        "C++"
+                    ],
+                    "answer": "JavaScript"
+                },
+                {
+                    "question": "What is the purpose of CSS?",
+                    "options": [
+                        "Structure the content",
+                        "Style the content",
+                        "Program the logic",
+                        "Create databases"
+                    ],
+                    "answer": "Style the content"
+                },
+                {
+                    "question": "Which of the following is a backend programming language?",
+                    "options": [
+                        "JavaScript",
+                        "HTML",
+                        "PHP",
+                        "CSS"
+                    ],
+                    "answer": "PHP"
+                },
+                {
+                    "question": "What is a variable?",
+                    "options": [
+                        "A constant value",
+                        "A storage location in memory",
+                        "A function",
+                        "A data type"
+                    ],
+                    "answer": "A storage location in memory"
+                },
+                {
+                    "question": "What does SQL stand for?",
+                    "options": [
+                        "Structured Query Language",
+                        "Sequential Query Language",
+                        "Simple Query Language",
+                        "Structured Quick Language"
+                    ],
+                    "answer": "Structured Query Language"
+                },
+                {
+                    "question": "Which of the following is not a programming paradigm?",
+                    "options": [
+                        "Object-oriented",
+                        "Procedural",
+                        "Functional",
+                        "Markup"
+                    ],
+                    "answer": "Markup"
+                },
+                {
+                    "question": "What is the primary purpose of a loop?",
+                    "options": [
+                        "To repeat a block of code",
+                        "To define a variable",
+                        "To create a function",
+                        "To handle errors"
+                    ],
+                    "answer": "To repeat a block of code"
+                },
+                {
+                    "question": "What is an API?",
+                    "options": [
+                        "Application Programming Interface",
+                        "Advanced Programming Interface",
+                        "Application Program Interface",
+                        "Advanced Program Interface"
+                    ],
+                    "answer": "Application Programming Interface"
+                },
+                {
+                    "question": "Which data structure uses LIFO (Last In, First Out)?",
+                    "options": [
+                        "Queue",
+                        "Stack",
+                        "Array",
+                        "Linked List"
+                    ],
+                    "answer": "Stack"
+                }
+            ]
+        },
+        {
+            "name": "Math",
+            "questions": [
+                {
+                    "question": "What is the square root of 49?",
+                    "options": [
+                        "7",
+                        "12",
+                        "49",
+                        "6"
+                    ],
+                    "answer": "7"
+                },
+                {
+                    "question": "What is 2 + 2?",
+                    "options": [
+                        "3",
+                        "4",
+                        "5",
+                        "6"
+                    ],
+                    "answer": "4"
+                },
+                {
+                    "question": "What is the square root of 16?",
+                    "options": [
+                        "2",
+                        "4",
+                        "8",
+                        "16"
+                    ],
+                    "answer": "4"
+                },
+                {
+                    "question": "What is 7 x 6?",
+                    "options": [
+                        "42",
+                        "36",
+                        "48",
+                        "56"
+                    ],
+                    "answer": "42"
+                },
+                {
+                    "question": "What is 15 - 9?",
+                    "options": [
+                        "6",
+                        "7",
+                        "8",
+                        "5"
+                    ],
+                    "answer": "6"
+                },
+                {
+                    "question": "What is 5^2?",
+                    "options": [
+                        "25",
+                        "20",
+                        "15",
+                        "30"
+                    ],
+                    "answer": "25"
+                },
+                {
+                    "question": "What is the value of π (pi) to two decimal places?",
+                    "options": [
+                        "3.14",
+                        "3.16",
+                        "3.12",
+                        "3.15"
+                    ],
+                    "answer": "3.14"
+                },
+                {
+                    "question": "What is the next prime number after 7?",
+                    "options": [
+                        "8",
+                        "9",
+                        "10",
+                        "11"
+                    ],
+                    "answer": "11"
+                },
+                {
+                    "question": "What is the sum of angles in a triangle?",
+                    "options": [
+                        "90 degrees",
+                        "180 degrees",
+                        "360 degrees",
+                        "270 degrees"
+                    ],
+                    "answer": "180 degrees"
+                },
+                {
+                    "question": "What is 12 ÷ 4?",
+                    "options": [
+                        "3",
+                        "4",
+                        "2",
+                        "6"
+                    ],
+                    "answer": "3"
+                }
+            ]
+        },
+        {
+            "name": "Science",
+            "questions": [
+                {
+                    "question": "What is the chemical symbol for water?",
+                    "options": [
+                        "H2O",
+                        "O2",
+                        "CO2",
+                        "N2"
+                    ],
+                    "answer": "H2O"
+                },
+                {
+                    "question": "Which planet is known as the Red Planet?",
+                    "options": [
+                        "Earth",
+                        "Mars",
+                        "Jupiter",
+                        "Saturn"
+                    ],
+                    "answer": "Mars"
+                },
+                {
+                    "question": "What is the speed of light?",
+                    "options": [
+                        "299,792 km/s",
+                        "150,000 km/s",
+                        "1,000 km/s",
+                        "300,000 km/s"
+                    ],
+                    "answer": "299,792 km/s"
+                },
+                {
+                    "question": "What is the powerhouse of the cell?",
+                    "options": [
+                        "Nucleus",
+                        "Ribosome",
+                        "Mitochondria",
+                        "Endoplasmic Reticulum"
+                    ],
+                    "answer": "Mitochondria"
+                },
+                {
+                    "question": "What gas do plants absorb?",
+                    "options": [
+                        "Oxygen",
+                        "Carbon Dioxide",
+                        "Nitrogen",
+                        "Hydrogen"
+                    ],
+                    "answer": "Carbon Dioxide"
+                },
+                {
+                    "question": "What is the boiling point of water?",
+                    "options": [
+                        "100°C",
+                        "90°C",
+                        "80°C",
+                        "120°C"
+                    ],
+                    "answer": "100°C"
+                },
+                {
+                    "question": "What is the chemical symbol for gold?",
+                    "options": [
+                        "Au",
+                        "Ag",
+                        "Pb",
+                        "Fe"
+                    ],
+                    "answer": "Au"
+                },
+                {
+                    "question": "Which planet is closest to the Sun?",
+                    "options": [
+                        "Venus",
+                        "Mars",
+                        "Mercury",
+                        "Earth"
+                    ],
+                    "answer": "Mercury"
+                },
+                {
+                    "question": "What is the most abundant gas in the Earth's atmosphere?",
+                    "options": [
+                        "Oxygen",
+                        "Nitrogen",
+                        "Carbon Dioxide",
+                        "Hydrogen"
+                    ],
+                    "answer": "Nitrogen"
+                },
+                {
+                    "question": "What type of bond involves the sharing of electron pairs?",
+                    "options": [
+                        "Ionic",
+                        "Covalent",
+                        "Hydrogen",
+                        "Metallic"
+                    ],
+                    "answer": "Covalent"
+                }
+            ]
+        },
+        {
+            "name": "History",
+            "questions": [
+                {
+                    "question": "Who was the first President of the USA?",
+                    "options": [
+                        "George Washington",
+                        "Thomas Jefferson",
+                        "Abraham Lincoln",
+                        "John Adams"
+                    ],
+                    "answer": "George Washington"
+                },
+                {
+                    "question": "What year did World War II end?",
+                    "options": [
+                        "1945",
+                        "1944",
+                        "1939",
+                        "1950"
+                    ],
+                    "answer": "1945"
+                },
+                {
+                    "question": "Who wrote the Declaration of Independence?",
+                    "options": [
+                        "George Washington",
+                        "John Adams",
+                        "Thomas Jefferson",
+                        "Benjamin Franklin"
+                    ],
+                    "answer": "Thomas Jefferson"
+                },
+                {
+                    "question": "What ancient civilization built the pyramids?",
+                    "options": [
+                        "Romans",
+                        "Greeks",
+                        "Egyptians",
+                        "Mayans"
+                    ],
+                    "answer": "Egyptians"
+                },
+                {
+                    "question": "Who was known as the 'Iron Lady'?",
+                    "options": [
+                        "Margaret Thatcher",
+                        "Indira Gandhi",
+                        "Angela Merkel",
+                        "Golda Meir"
+                    ],
+                    "answer": "Margaret Thatcher"
+                },
+                {
+                    "question": "What was the main cause of the Cold War?",
+                    "options": [
+                        "Capitalism vs. Communism",
+                        "Racism",
+                        "Imperialism",
+                        "Nationalism"
+                    ],
+                    "answer": "Capitalism vs. Communism"
+                },
+                {
+                    "question": "Who was the first man on the moon?",
+                    "options": [
+                        "Neil Armstrong",
+                        "Buzz Aldrin",
+                        "Yuri Gagarin",
+                        "Michael Collins"
+                    ],
+                    "answer": "Neil Armstrong"
+                },
+                {
+                    "question": "What was the name of the ship that sank on its maiden voyage in 1912?",
+                    "options": [
+                        "Lusitania",
+                        "Titanic",
+                        "Olympic",
+                        "Britannic"
+                    ],
+                    "answer": "Titanic"
+                },
+                {
+                    "question": "Which empire was known for its road system?",
+                    "options": [
+                        "Roman Empire",
+                        "Ottoman Empire",
+                        "Mongol Empire",
+                        "Persian Empire"
+                    ],
+                    "answer": "Roman Empire"
+                },
+                {
+                    "question": "What event sparked the start of World War I?",
+                    "options": [
+                        "Assassination of Archduke Ferdinand",
+                        "Invasion of Poland",
+                        "Attack on Pearl Harbor",
+                        "Fall of the Berlin Wall"
+                    ],
+                    "answer": "Assassination of Archduke Ferdinand"
+                }
+            ]
+        },
+        {
+            "name": "Geography",
+            "questions": [
+                {
+                    "question": "What is the largest continent?",
+                    "options": [
+                        "Asia",
+                        "Africa",
+                        "North America",
+                        "Europe"
+                    ],
+                    "answer": "Asia"
+                },
+                {
+                    "question": "What river is the longest in the world?",
+                    "options": [
+                        "Amazon",
+                        "Nile",
+                        "Yangtze",
+                        "Mississippi"
+                    ],
+                    "answer": "Nile"
+                },
+                {
+                    "question": "What is the capital of Japan?",
+                    "options": [
+                        "Tokyo",
+                        "Seoul",
+                        "Beijing",
+                        "Bangkok"
+                    ],
+                    "answer": "Tokyo"
+                },
+                {
+                    "question": "Which desert is the largest in the world?",
+                    "options": [
+                        "Sahara",
+                        "Gobi",
+                        "Kalahari",
+                        "Atacama"
+                    ],
+                    "answer": "Sahara"
+                },
+                {
+                    "question": "What country has the most natural lakes?",
+                    "options": [
+                        "Canada",
+                        "Russia",
+                        "USA",
+                        "India"
+                    ],
+                    "answer": "Canada"
+                },
+                {
+                    "question": "Which country is known as the Land of the Rising Sun?",
+                    "options": [
+                        "China",
+                        "Japan",
+                        "Thailand",
+                        "South Korea"
+                    ],
+                    "answer": "Japan"
+                },
+                {
+                    "question": "What is the capital of Australia?",
+                    "options": [
+                        "Canberra",
+                        "Sydney",
+                        "Melbourne",
+                        "Brisbane"
+                    ],
+                    "answer": "Canberra"
+                },
+                {
+                    "question": "Which ocean is the largest?",
+                    "options": [
+                        "Atlantic",
+                        "Indian",
+                        "Arctic",
+                        "Pacific"
+                    ],
+                    "answer": "Pacific"
+                },
+                {
+                    "question": "What mountain range separates Europe and Asia?",
+                    "options": [
+                        "Himalayas",
+                        "Rockies",
+                        "Andes",
+                        "Ural"
+                    ],
+                    "answer": "Ural"
+                },
+                {
+                    "question": "What is the capital of Egypt?",
+                    "options": [
+                        "Cairo",
+                        "Alexandria",
+                        "Giza",
+                        "Luxor"
+                    ],
+                    "answer": "Cairo"
+                }
+            ]
+        },
+        {
+            "name": "Literature",
+            "questions": [
+                {
+                    "question": "Who wrote 'Romeo and Juliet'?",
+                    "options": [
+                        "Charles Dickens",
+                        "Jane Austen",
+                        "William Shakespeare",
+                        "Mark Twain"
+                    ],
+                    "answer": "William Shakespeare"
+                },
+                {
+                    "question": "What is the first book of the Harry Potter series?",
+                    "options": [
+                        "Harry Potter and the Goblet of Fire",
+                        "Harry Potter and the Chamber of Secrets",
+                        "Harry Potter and the Philosopher's Stone",
+                        "Harry Potter and the Order of the Phoenix"
+                    ],
+                    "answer": "Harry Potter and the Philosopher's Stone"
+                },
+                {
+                    "question": "Who wrote 'The Great Gatsby'?",
+                    "options": [
+                        "F. Scott Fitzgerald",
+                        "Ernest Hemingway",
+                        "J.D. Salinger",
+                        "Leo Tolstoy"
+                    ],
+                    "answer": "F. Scott Fitzgerald"
+                },
+                {
+                    "question": "What genre does '1984' belong to?",
+                    "options": [
+                        "Fiction",
+                        "Non-fiction",
+                        "Fantasy",
+                        "Dystopian"
+                    ],
+                    "answer": "Dystopian"
+                },
+                {
+                    "question": "Who is the author of 'Moby Dick'?",
+                    "options": [
+                        "Herman Melville",
+                        "Charles Dickens",
+                        "Leo Tolstoy",
+                        "Mark Twain"
+                    ],
+                    "answer": "Herman Melville"
+                },
+                {
+                    "question": "What is the main theme of 'To Kill a Mockingbird'?",
+                    "options": [
+                        "Racism",
+                        "Friendship",
+                        "Love",
+                        "War"
+                    ],
+                    "answer": "Racism"
+                },
+                {
+                    "question": "Who wrote 'Pride and Prejudice'?",
+                    "options": [
+                        "Charlotte Brontë",
+                        "Jane Austen",
+                        "Virginia Woolf",
+                        "Emily Dickinson"
+                    ],
+                    "answer": "Jane Austen"
+                },
+                {
+                    "question": "What is the setting of 'The Catcher in the Rye'?",
+                    "options": [
+                        "New York City",
+                        "London",
+                        "Paris",
+                        "Tokyo"
+                    ],
+                    "answer": "New York City"
+                },
+                {
+                    "question": "Who wrote 'The Odyssey'?",
+                    "options": [
+                        "Homer",
+                        "Virgil",
+                        "Ovid",
+                        "Sophocles"
+                    ],
+                    "answer": "Homer"
+                },
+                {
+                    "question": "What is the main character's name in 'The Hunger Games'?",
+                    "options": [
+                        "Katniss Everdeen",
+                        "Hermione Granger",
+                        "Bella Swan",
+                        "Luna Lovegood"
+                    ],
+                    "answer": "Katniss Everdeen"
+                }
+            ]
+        },
+        {
+            "name": "Art",
+            "questions": [
+                {
+                    "question": "Who painted the Mona Lisa?",
+                    "options": [
+                        "Vincent van Gogh",
+                        "Pablo Picasso",
+                        "Leonardo da Vinci",
+                        "Claude Monet"
+                    ],
+                    "answer": "Leonardo da Vinci"
+                },
+                {
+                    "question": "What art movement is associated with Andy Warhol?",
+                    "options": [
+                        "Impressionism",
+                        "Surrealism",
+                        "Pop Art",
+                        "Cubism"
+                    ],
+                    "answer": "Pop Art"
+                },
+                {
+                    "question": "Who sculpted David?",
+                    "options": [
+                        "Michelangelo",
+                        "Donatello",
+                        "Bernini",
+                        "Rodin"
+                    ],
+                    "answer": "Michelangelo"
+                },
+                {
+                    "question": "What is the primary medium of a watercolor painting?",
+                    "options": [
+                        "Oil",
+                        "Acrylic",
+                        "Water",
+                        "Charcoal"
+                    ],
+                    "answer": "Water"
+                },
+                {
+                    "question": "Which artist is known for his murals in Mexico?",
+                    "options": [
+                        "Diego Rivera",
+                        "Frida Kahlo",
+                        "David Alfaro Siqueiros",
+                        "Rufino Tamayo"
+                    ],
+                    "answer": "Diego Rivera"
+                },
+                {
+                    "question": "What is the term for the art of paper folding?",
+                    "options": [
+                        "Origami",
+                        "Calligraphy",
+                        "Decoupage",
+                        "Papercraft"
+                    ],
+                    "answer": "Origami"
+                },
+                {
+                    "question": "Who is known for the painting 'The Starry Night'?",
+                    "options": [
+                        "Vincent van Gogh",
+                        "Pablo Picasso",
+                        "Claude Monet",
+                        "Henri Matisse"
+                    ],
+                    "answer": "Vincent van Gogh"
+                },
+                {
+                    "question": "What is the term for a painting done on wet plaster?",
+                    "options": [
+                        "Fresco",
+                        "Tempera",
+                        "Encaustic",
+                        "Mosaic"
+                    ],
+                    "answer": "Fresco"
+                },
+                {
+                    "question": "Who created the sculpture 'The Thinker'?",
+                    "options": [
+                        "Auguste Rodin",
+                        "Henri Matisse",
+                        "Alberto Giacometti",
+                        "Louise Bourgeois"
+                    ],
+                    "answer": "Auguste Rodin"
+                },
+                {
+                    "question": "What is the main focus of abstract art?",
+                    "options": [
+                        "Realism",
+                        "Expression",
+                        "Geometry",
+                        "Color"
+                    ],
+                    "answer": "Expression"
+                }
+            ]
+        },
+        {
+            "name": "Music",
+            "questions": [
+                {
+                    "question": "Who composed the Four Seasons?",
+                    "options": [
+                        "Ludwig van Beethoven",
+                        "Johann Sebastian Bach",
+                        "Antonio Vivaldi",
+                        "Wolfgang Amadeus Mozart"
+                    ],
+                    "answer": "Antonio Vivaldi"
+                },
+                {
+                    "question": "What is the term for the speed of a piece of music?",
+                    "options": [
+                        "Tempo",
+                        "Rhythm",
+                        "Melody",
+                        "Harmony"
+                    ],
+                    "answer": "Tempo"
+                },
+                {
+                    "question": "Which instrument is known as the king of instruments?",
+                    "options": [
+                        "Piano",
+                        "Organ",
+                        "Violin",
+                        "Guitar"
+                    ],
+                    "answer": "Organ"
+                },
+                {
+                    "question": "Who is known as the 'Queen of Pop'?",
+                    "options": [
+                        "Madonna",
+                        "Beyoncé",
+                        "Lady Gaga",
+                        "Taylor Swift"
+                    ],
+                    "answer": "Madonna"
+                },
+                {
+                    "question": "What is a musical scale?",
+                    "options": [
+                        "A series of notes",
+                        "A type of rhythm",
+                        "A form of harmony",
+                        "A pattern of chords"
+                    ],
+                    "answer": "A series of notes"
+                },
+                {
+                    "question": "Which composer is known for his symphonies?",
+                    "options": [
+                        "Johannes Brahms",
+                        "Claude Debussy",
+                        "Frédéric Chopin",
+                        "Gustav Mahler"
+                    ],
+                    "answer": "Gustav Mahler"
+                },
+                {
+                    "question": "What is the name of the famous music festival held in Coachella Valley?",
+                    "options": [
+                        "Lollapalooza",
+                        "Glastonbury",
+                        "Coachella",
+                        "Burning Man"
+                    ],
+                    "answer": "Coachella"
+                },
+                {
+                    "question": "What instrument is typically used in jazz music?",
+                    "options": [
+                        "Guitar",
+                        "Piano",
+                        "Trumpet",
+                        "Drums"
+                    ],
+                    "answer": "Trumpet"
+                },
+                {
+                    "question": "Who wrote the opera 'Carmen'?",
+                    "options": [
+                        "Giuseppe Verdi",
+                        "Giacomo Puccini",
+                        "Georges Bizet",
+                        "Wolfgang Amadeus Mozart"
+                    ],
+                    "answer": "Georges Bizet"
+                },
+                {
+                    "question": "What is the most widely used musical notation?",
+                    "options": [
+                        "Standard notation",
+                        "Tablature",
+                        "Figured bass",
+                        "Graphic notation"
+                    ],
+                    "answer": "Standard notation"
+                }
+            ]
+        },
+        {
+            "name": "Sports",
+            "questions": [
+                {
+                    "question": "Which sport is known as 'the beautiful game'?",
+                    "options": [
+                        "Basketball",
+                        "Cricket",
+                        "Soccer",
+                        "Tennis"
+                    ],
+                    "answer": "Soccer"
+                },
+                {
+                    "question": "How many players are on a basketball team?",
+                    "options": [
+                        "5",
+                        "6",
+                        "7",
+                        "8"
+                    ],
+                    "answer": "5"
+                },
+                {
+                    "question": "Which country hosted the 2016 Summer Olympics?",
+                    "options": [
+                        "USA",
+                        "China",
+                        "Brazil",
+                        "UK"
+                    ],
+                    "answer": "Brazil"
+                },
+                {
+                    "question": "What is the highest score possible in a game of bowling?",
+                    "options": [
+                        "200",
+                        "300",
+                        "100",
+                        "400"
+                    ],
+                    "answer": "300"
+                },
+                {
+                    "question": "What is the national sport of Japan?",
+                    "options": [
+                        "Karate",
+                        "Sumo Wrestling",
+                        "Baseball",
+                        "Soccer"
+                    ],
+                    "answer": "Sumo Wrestling"
+                },
+                {
+                    "question": "Which sport uses a bat and ball and is played on a diamond?",
+                    "options": [
+                        "Cricket",
+                        "Baseball",
+                        "Softball",
+                        "Lacrosse"
+                    ],
+                    "answer": "Baseball"
+                },
+                {
+                    "question": "What is the length of an Olympic swimming pool?",
+                    "options": [
+                        "25 meters",
+                        "50 meters",
+                        "100 meters",
+                        "75 meters"
+                    ],
+                    "answer": "50 meters"
+                },
+                {
+                    "question": "Who holds the record for the most home runs in MLB history?",
+                    "options": [
+                        "Babe Ruth",
+                        "Barry Bonds",
+                        "Hank Aaron",
+                        "Ted Williams"
+                    ],
+                    "answer": "Barry Bonds"
+                },
+                {
+                    "question": "Which country has won the most FIFA World Cups?",
+                    "options": [
+                        "Germany",
+                        "Brazil",
+                        "Italy",
+                        "Argentina"
+                    ],
+                    "answer": "Brazil"
+                },
+                {
+                    "question": "What is the only sport to have been played on the moon?",
+                    "options": [
+                        "Golf",
+                        "Baseball",
+                        "Soccer",
+                        "Tennis"
+                    ],
+                    "answer": "Golf"
+                }
+            ]
+        }
+    ]
+}
