@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { useEffect, useState } from "react";
 import { usePoints } from "@/context/PointsContext";
@@ -16,19 +16,21 @@ const Quiz = ({ params }) => {
   const [showResults, setShowResults] = useState(false);
   const [correctAnswers, setCorrectAnswers] = useState(0);
   const [wrongAnswers, setWrongAnswers] = useState(0);
-  const [unattemptedQuestions, setUnattemptedQuestions] = useState(0); 
+  const [unattemptedQuestions, setUnattemptedQuestions] = useState(0);
   const [totalTimeSpent, setTotalTimeSpent] = useState(0);
   const [timePerQuestion, setTimePerQuestion] = useState(0);
 
   useEffect(() => {
     const fetchQuestions = async () => {
-      const response = await fetch('/data/questions.json');
+      const response = await fetch("/data/questions.json");
       if (response.ok) {
         const data = await response.json();
-        const subjectData = data.subjects.find(s => s.name.toLowerCase() === subject);
+        const subjectData = data.subjects.find(
+          (s) => s.name.toLowerCase() === subject
+        );
         setQuestions(subjectData ? subjectData.questions : []);
       } else {
-        console.error('Failed to fetch questions');
+        console.error("Failed to fetch questions");
       }
     };
     fetchQuestions();
@@ -44,7 +46,7 @@ const Quiz = ({ params }) => {
     setTotalTimeSpent(totalTimeSpent + timePerQuestion);
 
     if (option === questions[currentQuestionIndex].answer) {
-      setPoints(points + 4);  // 4 points for a correct answer
+      setPoints(points + 4); // 4 points for a correct answer
       setCorrectAnswers(correctAnswers + 1);
     } else {
       setWrongAnswers(wrongAnswers + 1);
@@ -85,17 +87,20 @@ const Quiz = ({ params }) => {
             {questions[currentQuestionIndex]?.question}
           </h3>
           <QuestionTimer
-            onTimeUp={handleTimeUp} // Time runs out, auto-move to the next question
-            setTimePerQuestion={setTimePerQuestion} // Track time per question
-            isAnswered={isAnswered} // Stop timer if answered
+            onTimeUp={handleTimeUp}
+            setTimePerQuestion={setTimePerQuestion}
+            isAnswered={isAnswered}
+            resetTimer={currentQuestionIndex} 
           />
+
           <div className="mt-4 space-y-4">
             {questions[currentQuestionIndex]?.options.map((option) => (
               <button
                 key={option}
                 onClick={() => handleAnswer(option)}
                 className={`w-full p-4 rounded-lg text-lg font-semibold transition duration-300 ${
-                  isAnswered && option === questions[currentQuestionIndex].answer
+                  isAnswered &&
+                  option === questions[currentQuestionIndex].answer
                     ? "bg-green-500 text-white"
                     : isAnswered && option === selectedOption
                     ? "bg-red-500 text-white"
@@ -122,10 +127,10 @@ const Quiz = ({ params }) => {
           totalQuestions={questions.length}
           correctAnswers={correctAnswers}
           wrongAnswers={wrongAnswers}
-          unattemptedQuestions={unattemptedQuestions} 
+          unattemptedQuestions={unattemptedQuestions}
           percentage={percentage}
           timeSpent={totalTimeSpent}
-          averageTimePerQuestion={averageTimePerQuestion} 
+          averageTimePerQuestion={averageTimePerQuestion}
         />
       )}
     </div>
