@@ -1,0 +1,11 @@
+{
+    "questions": [
+      {
+        "id": 1,
+        "question": "What planet is known as the Red Planet?",
+        "options": ["Earth", "Mars", "Jupiter", "Venus"],
+        "answer": "Mars"
+      }
+    ]
+  }
+  
