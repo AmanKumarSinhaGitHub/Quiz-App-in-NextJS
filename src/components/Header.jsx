@@ -7,7 +7,7 @@ const Header = () => {
   const { points } = usePoints();
 
   return (
-    <header className="bg-gray-800 text-white py-4 sm:px-9 px-4 flex justify-between items-center">
+    <header className="bg-gray-800 text-white p-4 flex justify-between items-center">
       <Link href="/" className="text-2xl cursor-pointer">
         Quiz App
       </Link>
