@@ -31,6 +31,7 @@ export default function RootLayout({ children }) {
         <PointsProvider>
           <Header />
           <main className="min-h-screen">{children}</main>
+          <SpeedInsights />
           <Footer />
         </PointsProvider>
       </body>
