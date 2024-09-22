@@ -79,32 +79,43 @@ const Quiz = ({ params }) => {
   return (
     <div className="p-6 bg-gray-100 min-h-screen">
       {!showResults ? (
-        <div className="max-w-xl mx-auto bg-white rounded-lg shadow-lg p-6">
-          <h2 className="text-2xl font-semibold text-center mb-4">
+        <div className="max-w-xl mx-auto bg-white rounded-lg shadow-lg p-6 relative">
+          {/* Progress Bar */}
+          <div className="absolute top-0 left-0 h-2 bg-blue-500 transition-all duration-300" style={{ width: `${((currentQuestionIndex + 1) / questions.length) * 100}%` }}></div>
+          
+          {/* Question Number */}
+          <h2 className="text-2xl font-semibold text-center mb-4 text-blue-600">
             Question {currentQuestionIndex + 1} of {questions.length}
           </h2>
-          <h3 className="text-xl font-semibold text-center mb-4">
+
+          {/* Question Text */}
+          <h3 className="text-xl font-bold text-center mb-6 p-4 bg-blue-500 text-white rounded-lg">
             {questions[currentQuestionIndex]?.question}
           </h3>
+
+
+          {/* Timer */}
           <QuestionTimer
             onTimeUp={handleTimeUp}
             setTimePerQuestion={setTimePerQuestion}
             isAnswered={isAnswered}
-            resetTimer={currentQuestionIndex} 
+            resetTimer={currentQuestionIndex}
           />
 
-          <div className="mt-4 space-y-4">
+          
+
+          {/* Options */}
+          <div className="mt-6 space-y-4">
             {questions[currentQuestionIndex]?.options.map((option) => (
               <button
                 key={option}
                 onClick={() => handleAnswer(option)}
-                className={`w-full p-4 rounded-lg text-lg font-semibold transition duration-300 ${
-                  isAnswered &&
-                  option === questions[currentQuestionIndex].answer
+                className={`w-full py-4 px-6 rounded-lg text-lg font-semibold transition duration-300 focus:outline-none ${
+                  isAnswered && option === questions[currentQuestionIndex].answer
                     ? "bg-green-500 text-white"
                     : isAnswered && option === selectedOption
                     ? "bg-red-500 text-white"
-                    : "bg-gray-200 hover:bg-gray-300"
+                    : "bg-gray-200 hover:bg-gray-300 focus:bg-gray-300"
                 }`}
               >
                 {option}
@@ -112,12 +123,13 @@ const Quiz = ({ params }) => {
             ))}
           </div>
 
+          {/* Next Button */}
           {isAnswered && (
             <button
               onClick={handleNext}
-              className="mt-6 w-full p-4 bg-blue-500 text-white rounded-lg font-semibold hover:bg-blue-600 transition"
+              className="mt-8 w-full py-4 bg-blue-500 text-white rounded-lg font-semibold hover:bg-blue-600 transition"
             >
-              Next
+              Next Question
             </button>
           )}
         </div>
