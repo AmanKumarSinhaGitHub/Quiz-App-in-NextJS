@@ -6,7 +6,7 @@ import QuestionTimer from "@/components/QuestionTimer";
 import Results from "@/components/Results";
 
 const Quiz = ({ params }) => {
-  const { subject } = params; // Get the subject from the URL parameters
+  const { subject } = params;
   const { points, setPoints } = usePoints();
 
   const [questions, setQuestions] = useState([]);
@@ -16,10 +16,10 @@ const Quiz = ({ params }) => {
   const [showResults, setShowResults] = useState(false);
   const [correctAnswers, setCorrectAnswers] = useState(0);
   const [wrongAnswers, setWrongAnswers] = useState(0);
+  const [unattemptedQuestions, setUnattemptedQuestions] = useState(0); 
   const [totalTimeSpent, setTotalTimeSpent] = useState(0);
   const [timePerQuestion, setTimePerQuestion] = useState(0);
 
-  // Fetch questions based on the subject
   useEffect(() => {
     const fetchQuestions = async () => {
       const response = await fetch('/data/questions.json');
@@ -34,26 +34,23 @@ const Quiz = ({ params }) => {
     fetchQuestions();
   }, [subject]);
 
-  // Handle answer selection
   const handleAnswer = (option) => {
     if (isAnswered) return;
 
     setSelectedOption(option);
     setIsAnswered(true);
 
-    // Update points if the answer is correct
+    // Track the time spent on this question
+    setTotalTimeSpent(totalTimeSpent + timePerQuestion);
+
     if (option === questions[currentQuestionIndex].answer) {
       setPoints(points + 4);  // 4 points for a correct answer
       setCorrectAnswers(correctAnswers + 1);
     } else {
       setWrongAnswers(wrongAnswers + 1);
     }
-
-    // Track the time spent on this question
-    setTotalTimeSpent(totalTimeSpent + timePerQuestion);
   };
 
-  // Handle moving to the next question
   const handleNext = () => {
     const nextQuestion = currentQuestionIndex + 1;
     if (nextQuestion < questions.length) {
@@ -66,8 +63,10 @@ const Quiz = ({ params }) => {
     }
   };
 
+  // When time is up
   const handleTimeUp = () => {
-    setIsAnswered(true); // Auto-answer when time runs out
+    setIsAnswered(true); // Consider the question unattempted if time runs out
+    setUnattemptedQuestions(unattemptedQuestions + 1); // Increment the unattempted questions count
     handleNext(); // Automatically go to the next question
   };
 
@@ -86,8 +85,9 @@ const Quiz = ({ params }) => {
             {questions[currentQuestionIndex]?.question}
           </h3>
           <QuestionTimer
-            onTimeUp={handleTimeUp}
-            setTimePerQuestion={setTimePerQuestion} // Pass to track per question time
+            onTimeUp={handleTimeUp} // Time runs out, auto-move to the next question
+            setTimePerQuestion={setTimePerQuestion} // Track time per question
+            isAnswered={isAnswered} // Stop timer if answered
           />
           <div className="mt-4 space-y-4">
             {questions[currentQuestionIndex]?.options.map((option) => (
@@ -122,9 +122,10 @@ const Quiz = ({ params }) => {
           totalQuestions={questions.length}
           correctAnswers={correctAnswers}
           wrongAnswers={wrongAnswers}
+          unattemptedQuestions={unattemptedQuestions} 
           percentage={percentage}
           timeSpent={totalTimeSpent}
-          averageTimePerQuestion={averageTimePerQuestion} // Pass average time per question
+          averageTimePerQuestion={averageTimePerQuestion} 
         />
       )}
     </div>

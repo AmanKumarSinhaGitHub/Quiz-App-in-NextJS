@@ -5,20 +5,21 @@ const Results = ({
   totalQuestions,
   correctAnswers,
   wrongAnswers,
+  unattemptedQuestions, 
   percentage,
   timeSpent,
-  averageTimePerQuestion, // New prop for average time per question
+  averageTimePerQuestion,
 }) => (
-  <div className="p-6 max-w-xl mx-auto bg-white rounded-lg shadow-md">
-    <h2 className="text-3xl font-bold mb-4 text-center">Quiz Results</h2>
-    <div className="text-lg space-y-2">
-      <p className="font-semibold">Points Earned: <span className="font-normal">{score}</span></p>
-      <p className="font-semibold">Correct Answers: <span className="font-normal">{correctAnswers}</span></p>
-      <p className="font-semibold">Wrong Answers: <span className="font-normal">{wrongAnswers}</span></p>
-      <p className="font-semibold">Percentage: <span className="font-normal">{percentage}%</span></p>
-      <p className="font-semibold">Total Time Spent: <span className="font-normal">{timeSpent}s</span></p>
-      <p className="font-semibold">Time Per Question: <span className="font-normal">{averageTimePerQuestion}s</span></p>
-    </div>
+  <div className="p-4">
+    <h2 className="text-xl font-semibold">Quiz Results</h2>
+    <p>Points Earned: {score}</p>
+    <p>Total Questions: {totalQuestions}</p>
+    <p>Correct Answers: {correctAnswers}</p>
+    <p>Wrong Answers: {wrongAnswers}</p>
+    <p>Unattempted Questions: {unattemptedQuestions}</p> 
+    <p>Percentage: {percentage}%</p>
+    <p>Total Time Spent: {timeSpent.toFixed(2)}s</p>
+    <p>Average Time per Question: {averageTimePerQuestion}s</p>
   </div>
 );
 
