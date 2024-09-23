@@ -69,6 +69,7 @@ const Quiz = ({ params }) => {
   const handleTimeUp = () => {
     setIsAnswered(true); // Consider the question unattempted if time runs out
     setUnattemptedQuestions(unattemptedQuestions + 1); // Increment the unattempted questions count
+    setTotalTimeSpent(totalTimeSpent + 10);
     handleNext(); // Automatically go to the next question
   };
 
@@ -129,7 +130,7 @@ const Quiz = ({ params }) => {
               onClick={handleNext}
               className="mt-8 w-full py-4 bg-blue-500 text-white rounded-lg font-semibold hover:bg-blue-600 transition"
             >
-              Next Question
+              {currentQuestionIndex === questions.length - 1 ? "Submit" : "Next Question"}
             </button>
           )}
         </div>

@@ -24,6 +24,15 @@ const Results = ({
         </div>
         <FaTrophy className="text-yellow-500 text-3xl" />
       </div>
+
+
+      <div className="p-6 bg-white shadow-md rounded-lg flex items-center justify-between">
+        <div>
+          <p className="text-xl font-semibold">Points Earned</p>
+          <p className="text-lg font-bold text-green-600">{correctAnswers*4}</p>
+        </div>
+        <FaTrophy className="text-yellow-500 text-3xl" />
+      </div>
       
       <div className="p-6 bg-white shadow-md rounded-lg flex items-center justify-between">
         <div>
